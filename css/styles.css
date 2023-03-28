@@ -1,1 +1,130 @@
-/* dev styles go here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container {
+    padding: 1rem;
+}
+
+/* Typography */
+h2 {
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    font-weight: 200;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Header */
+header {
+    background-color: #000;
+}
+
+header svg {
+    fill: #fff;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu a:hover,
+.menu a:active {
+    color: tomato;
+}
+
+.menu li {
+    line-height: 2.1875rem;
+    flex: 1 0 calc(50% - 0.5rem);
+}
+
+
+/* Form */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0; 
+}
+
+label { 
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    display: block;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #e8e8e8;
+}
+
+textarea {
+    min-height: 18.75rem;
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+label[for="privacy"] {
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    width: unset;
+    border: none;
+    background-color: #fff;
+    box-shadow: none;
+    font-weight: bold;
+    transition: padding-left 1s ease;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 1225px) {
+    .inner-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        flex: 1 0 calc(25% - 0.5rem);
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+    }
+
+    fieldset div {
+        flex: 0 0 calc(50% - 3rem);
+    }
+}
